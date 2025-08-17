@@ -1,4 +1,4 @@
-import banner from "./src/assets/150882-799711525_small.mp4"
+import banner from "./assets/150882-799711525_small.mp4"
 
 export default function Hero() {
   return (
