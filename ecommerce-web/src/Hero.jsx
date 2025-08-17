@@ -1,9 +1,11 @@
+import banner from "./src/assets/150882-799711525_small.mp4"
+
 export default function Hero() {
   return (
     <section className="relative h-[100vh] overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="./src/assets/150882-799711525_small.mp4"
+        src={banner}
         autoPlay
         muted
         loop
