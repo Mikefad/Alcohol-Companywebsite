@@ -17,7 +17,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => (
-  <section className="bg-white py-20 px-6">
+  <section id="testimonials" className="bg-white py-20 px-6">
     <h2 className="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
       {testimonials.map((t, idx) => (

@@ -5,7 +5,7 @@ const COLORS = {
 
 const Footer = () => {
   return (
-    <footer style={{ background: COLORS.navy, color: "white" }}>
+    <footer id="contact" style={{ background: COLORS.navy, color: "white" }}>
       <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
         <div>
           <h3 className="text-2xl font-bold mb-3">Contact Us</h3>

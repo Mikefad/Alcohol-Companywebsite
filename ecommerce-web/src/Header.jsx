@@ -36,18 +36,29 @@ const Header = () => {
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-6">
-            <a href="#products" className="text-sm font-medium text-white hover:text-amber-400">Products</a>
-            <a href="#about" className="text-sm font-medium text-white hover:text-amber-400">About</a>
-            <a href="#features" className="text-sm font-medium text-white hover:text-amber-400">Features</a>
-            <a href="#contact" className="text-sm font-medium text-white hover:text-amber-400">Contact</a>
-          </nav>
+            <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a href="#products" className="text-white hover:text-amber-400 transition">Products</a>
+            <a href="#about" className="text-white hover:text-amber-400 transition">About</a>
+            <a href="#features" className="text-white hover:text-amber-400 transition">Features</a>
+            <a href="#contact" className="text-white hover:text-amber-400 transition">Contact</a>
+            </nav>
 
-          {/* Desktop CTAs */}
-          <div className="hidden md:flex items-center gap-3">
-            <a href="/register" className="px-4 py-2 text-sm font-semibold text-white rounded-lg bg-amber-600" >Register</a>
-            <a href="/book" className="px-4 py-2 text-sm font-semibold border rounded-lg text-white" style={{ borderColor: COLORS.border }}>Book a Session</a>
-          </div>
+            {/* Desktop CTA Buttons */}
+            <div className="hidden md:flex items-center gap-4">
+            <a
+                href="/register-client"
+                className="bg-amber-600 hover:bg-amber-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow transition"
+            >
+                Register as a Trade Client
+            </a>
+            <a
+                href="/private-order"
+                className="border border-white text-white hover:border-amber-400 hover:text-amber-400 text-sm font-semibold px-5 py-2.5 rounded-lg transition"
+            >
+                Book a Private Order
+            </a>
+            </div>
+
 
           {/* Mobile Button */}
           <motion.button
@@ -66,13 +77,24 @@ const Header = () => {
           <nav className="grid gap-3 text-sm">
             <a href="#products" className="font-medium text-gray-800">Products</a>
             <a href="#about" className="font-medium text-gray-800">About</a>
-            <a href="#features" className="font-medium text-gray-800">Features</a>
+            <a href="#testimonials" className="font-medium text-gray-800">Testimonials</a>
             <a href="#contact" className="font-medium text-gray-800">Contact</a>
           </nav>
-          <div className="mt-4 grid gap-2">
-            <a href="/register" className="w-full text-center text-white font-semibold px-4 py-2 rounded-lg bg-amber-600" >Register</a>
-            <a href="/book" className="w-full text-center font-semibold px-4 py-2 rounded-lg border" style={{ color: COLORS.text, borderColor: COLORS.border }}>Book a Session</a>
-          </div>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+                href="/private-order"
+                className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-semibold text-lg shadow-lg transition"
+            >
+                Book a Private Order
+            </a>
+            <a
+                href="/register-client"
+                className="bg-white text-amber-700 border border-amber-600 hover:bg-amber-50 px-8 py-3 rounded-full font-semibold text-lg shadow-md transition"
+            >
+                Register as a Trade Client
+            </a>
+            </div>
+
         </div>
       )}
     </>
